@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pageContainer">
+      <div class="title">Financial Tracker</div>
+      <div class="mainTracker" id="m1Tracker"></div>
+      <div class="mainTracker" id="cryptoTracker"></div>
+      <div class="modalSpace">
+        <div class="modal" id="m1modal">
+          <div>
+            <button
+              class="closeButton"
+              id="m1close"
+              onclick="toggleModal('m1')"
+            >
+              <img class="closeImg" src="Images/close.png" />
+            </button>
+          </div>
+          <div class="modalContent">
+            <div class="form">
+              <form>
+                <input
+                  type="number"
+                  id="m1Update"
+                  placeholder="Update Current Value"
+                />
+              </form>
+            </div>
+          </div>
+          <button class="submitButton" id="m1Submit" onclick="m1Update()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

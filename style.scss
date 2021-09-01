@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #071a2f, #07548e);
+  font-family: Lato;
+  overflow-x: hidden;
+  color: white;
+  font-size: calc(12px + 2vw);
+  height: 250vh;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.title {
+  margin-top: 4vw;
+  margin-bottom: 20px;
+}
+
+.mainTracker {
+  width: 65%;
+
+  background-color: rgba(7, 33, 58, 0.4);
+  border: 1px solid whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+  border-radius: 30px;
+  color: white;
+  margin: 20px 0;
+}
+
+.m1Tracker {
+  height: 95vh;
+}
+
+.cryptoTracker {
+  height: 60vh;
+}
+
+.mainIcon {
+  opacity: 1;
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 5px;
+  height: 120px;
+  margin: none;
+  width: 125px;
+  margin-bottom: 30px;
+}
+
+.mainProgressBarContainer {
+  height: 50px;
+  position: relative;
+  background: #555;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  width: 100%;
+}
+
+.mainProgressBar {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+
+  text-align: center;
+}
+
+.holdingProgressBarContainer {
+  height: 50px;
+  position: relative;
+  background: #555;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+  width: 85%;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.HoldingProgressBar {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgb(43, 194, 83);
+  position: relative;
+  overflow: hidden;
+  font-size: 25px;
+  text-align: center;
+}
+
+.holdingicon {
+  height: 52px;
+  margin: none;
+  width: auto;
+  border-radius: 8px;
+}
+
+.holdingWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 15px 0;
+}
+
+#holdingWrapper1 {
+  margin-top: 25px;
+}
+
+#DUKicon {
+  margin-left: 15px;
+}
+
+#MSFTicon {
+  margin-left: 12px;
+}
+
+#AAPLicon {
+  margin-left: 12px;
+}
+
+#VICIicon {
+  margin-left: 12px;
+}
+
+#QYLDicon {
+  margin-left: 12px;
+}
+
+#JEPIicon {
+  margin-left: 12px;
+}
+
+.editButton {
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.editicon {
+  height: 30px;
+}
+
+.modal {
+  position: fixed;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 70%;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  border-radius: 15px;
+}
+
+.modalContent {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 80%;
+  border-radius: 0.5rem;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
+  font-size: calc(12px + 1vw);
+}
+
+.showModal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.closeButton {
+  border: none;
+  position: absolute;
+  top: 4%;
+  left: 95%;
+  background: none;
+}
+
+.closeImg {
+  height: 20px;
+  border-radius: 4px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  font-size: calc(12px + 1vw);
+  margin: 5px 0;
+}
+
+.currentDataNum {
+  margin: 8px 0;
+}
+
+.modalSpace {
+  display: flex;
+  flex-direction: column;
+}
+
+.submitButton {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  padding: 1vw;
+  font-size: calc(12px + 1vw);
+  border: 1px solid black;
+  background: #d0f0c0;
+  border-radius: 8px;
+}
+
+.cryptoicon {
+  margin-left: 10px;
+}
+
+.cryptoProgressBarContainer {
+  margin-right: 15px;
+  width: 87%;
+}
+
+#m1modal {
+  left: 35%;
+  top: 30%;
+  width: 28%;
+  height: 40%;
+}
+
+#m1Submit {
+  top: 50%;
+  left: 38%;
+}
+
+#m1close {
+  top: 3%;
+  left: 93%;
+}
